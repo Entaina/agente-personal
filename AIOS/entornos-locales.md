@@ -60,9 +60,13 @@ Si solo tienes la conversación actual, escribe «Parcial: conversación actual�
 
 Antes de crear, lista o consulta las tareas existentes y confirma carpeta, horario, zona horaria y responsable. Reutiliza una coincidencia inequívoca; nunca otra tarea que solo comparta nombre. Conserva los campos y preferencias de notificación no solicitados. Una segunda ejecución del instalador debe dejar el mismo número de tareas.
 
-### Cowork: conserva las dos tareas
+### Cowork: una revisión conjunta
 
-Usa el programador nativo y los prompts de Orquestación de `AIOS/systems/learning-system.md` y `AIOS/systems/proyectos-y-areas.md`. Proyectos y Áreas consume el log producido por Learning. Si Learning sigue escribiéndolo, no ejecutes la segunda pasada a la vez; aplázala mediante el mecanismo disponible o indica que quedó pendiente.
+Una sola tarea con el programador nativo, como en GPT: Learning y después Proyectos y Áreas sobre el mismo log, con el mantenimiento del pOKM si está activo. Así la segunda fase nunca arranca mientras la primera sigue escribiendo. Horario por defecto: 23:30 en la zona horaria del usuario, a confirmar. Prompt:
+
+> Trabaja en esta carpeta, la permanente de mi coach. Lee CLAUDE.md, ME.md y los mapas. Ejecuta el Learning System según AIOS/systems/learning-system.md y después el Sistema Proyectos y Áreas según AIOS/systems/proyectos-y-areas.md sobre ese mismo log, con el mantenimiento del pOKM si está activo. Completa ambas fases de generación de propuestas antes de pedir validación. Usa AIOS/entornos-locales.md para recuperar conversaciones y declarar su cobertura. No apliques propuestas sin mi respuesta.
+
+Instalaciones anteriores a 2.5.0 tenían dos tareas (Learning a las 23:30 y Proyectos y Áreas a las 23:45). Si las encuentras, propón fundirlas: actualiza el prompt de la de Learning con el de arriba, conservando su ID, horario y campos no solicitados, y desactiva la de Proyectos y Áreas. Hazlo solo con la confirmación del usuario y comprobando el resultado; si no puedes, conserva las dos y deja la fusión pendiente.
 
 ### Claude Code: revisión conjunta a demanda o programada en la app de escritorio
 

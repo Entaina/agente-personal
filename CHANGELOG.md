@@ -8,6 +8,21 @@ Las secciones de cada versión usan el vocabulario de las migraciones — **Aña
 
 Regla de oro de la actualización: **nunca toca contenido tuyo** — `ME.md`, `projects/`, `areas/`, `knowledge/`, `episodic/` ni `pokm/` — y **nunca borra** skills ni entradas que tú hayas creado. Solo añade y modifica lo que aquí se lista. Una operación **Migrado** puede mover o reformatear también skills tuyas, pero conservando su contenido íntegro y siempre con tu OK: migrar no es borrar.
 
+## [2.5.0] - 2026-11-05
+
+En Cowork, la revisión diaria pasa a ser una sola tarea, como en las demás apps: primero Learning y después Proyectos y Áreas, sobre el mismo diario. Y la instalación pregunta siempre si crea la tarea de la revisión. Cómo actualizar, en `migrations/2.5.0.md`.
+
+### Cambiado
+
+- `AIOS/entornos-locales.md` — Cowork usa una revisión conjunta con su prompt, en lugar de dos tareas a las 23:30 y a las 23:45. Con dos tareas, la segunda podía arrancar mientras la primera seguía escribiendo el diario. Incluye cómo fundir las dos tareas de una instalación anterior, con el OK del usuario.
+- `AIOS/systems/learning-system.md`, `AIOS/systems/proyectos-y-areas.md` y `AIOS/systems/pokm.md` — Cowork entra en la revisión conjunta junto a GPT local y Amazon Quick.
+
+### Repo (no se aplica a tu carpeta)
+
+- INSTALL — el paso de la revisión pregunta en todos los entornos si crea la tarea diaria y la crea con el OK del usuario; si dice que no, queda a demanda y se anota en Pendientes. En Claude Code ya no depende de que el instalador detecte la app de escritorio. Cowork configura una sola tarea.
+- README — la revisión diaria es una sola tarea en Cowork, GPT local y Amazon Quick.
+- Tests — originales 2.4.1 de la migración y su comprobación.
+
 ## [2.4.1] - 2026-10-30
 
 El repositorio se llama ahora `Entaina/agente-personal`: el nombre anterior llevaba «claude» y «cowork», y el asistente funciona en más apps que esas. GitHub redirige la dirección antigua, así que nada se rompe. Cómo actualizar, en `migrations/2.4.1.md`.

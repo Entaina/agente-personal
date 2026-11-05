@@ -15,7 +15,7 @@ El mapa de los documentos de trabajo del usuario. Sin él, el coach busca a cieg
 
 - **Activación**, a demanda: una conversación con el usuario (apartado A de la skill). Decide él qué carpetas entran y con qué nivel: «índice» (se describen sus documentos), «mapa» (solo la carpeta) o «fuera».
 - **Consulta**, en vivo: el coach empieza por `pokm/mapa.md` cuando busca un documento. Lo indican dos líneas de `ME.md` escritas al activarlo.
-- **Mantenimiento automático**: tercera fase de la revisión diaria, tras Learning y Proyectos y Áreas, solo si el pOKM está activo. En Cowork, al final de la tarea de Proyectos y Áreas; en Claude Code, dentro de `/coach-review` y de su tarea programada local; en GPT local y Amazon Quick, dentro de la revisión conjunta. Su prompt no cambia: la fase la activa `AIOS/systems/proyectos-y-areas.md`. En Quick es beta, sin programa y sin índices.
+- **Mantenimiento automático**: tercera fase de la revisión diaria, tras Learning y Proyectos y Áreas, solo si el pOKM está activo. En Claude Code, dentro de `/coach-review` y de su tarea programada local; en Cowork, GPT local y Amazon Quick, dentro de la revisión conjunta. Su prompt no cambia: la fase la activa `AIOS/systems/proyectos-y-areas.md`. En Quick es beta, sin programa y sin índices.
 
 **El hand-off**: no hay propuestas que firmar. El mapa es un dato derivado de las carpetas del usuario y la revisión lo pone al día sola, con cuatro límites: solo dentro de lo que el usuario eligió (lo nuevo fuera del mapa se avisa y no entra), lo sensible no se describe y pasa a «fuera», un tope de documentos por pasada y las «Notas» del usuario intactas. Lo que cambió queda en la sección `## pOKM` del diario. Cambiar el alcance o desactivarlo es siempre una petición del usuario.
 
