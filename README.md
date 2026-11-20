@@ -6,10 +6,12 @@ Compatible con Claude Cowork, Claude Code, ChatGPT Work / Codex en la app de esc
 
 **Ahora mismo no recomendamos instalarlo en Claude Cowork**: tiene problemas para leer las sesiones anteriores, que es de donde aprende la revisión diaria. Si trabajas con Claude, usa Claude Code. Las instalaciones que ya tienes en Cowork siguen funcionando.
 
+Si trabajas con ChatGPT, **instálalo en Codex** y no en el modo Work: es donde hemos probado el recorrido completo, incluidas la lectura de conversaciones anteriores y la revisión diaria programada. Si empiezas en Work, el instalador te propondrá pasarte a Codex; puedes seguir en Work si lo prefieres.
+
 ## Instalación
 
 1. Crea una carpeta nueva y **vacía** en tu ordenador (por ejemplo, `mi-coach`). No la muevas ni la renombres después.
-2. Abre Cowork o ChatGPT Work / Codex y selecciona esa carpeta. En GPT elige **trabajar localmente**, sin crear un worktree. En Claude Code, abre una terminal en esa carpeta y ejecuta `claude`; la integración nativa usa Python 3.9 o posterior; si no lo tienes, el coach lo instala durante la instalación, con tu permiso. Git no hace falta: en Windows, Claude Code puede avisar de que no está disponible y funciona igual. En Amazon Quick, conecta la carpeta en Customize → Knowledge y abre un chat; al pegar el prompt del paso 3, añade al principio una línea con la ruta: «La carpeta de trabajo es «NOMBRE» (RUTA COMPLETA).». Revisa antes las opciones de indexación de esa carpeta: suben los archivos a la nube y el coach no las necesita.
+2. Abre Cowork o Codex (en la app de escritorio de ChatGPT) y selecciona esa carpeta. En Codex elige **trabajar localmente**, sin crear un worktree; el modo Work también funciona, pero recomendamos Codex. En Claude Code, abre una terminal en esa carpeta y ejecuta `claude`; la integración nativa usa Python 3.9 o posterior; si no lo tienes, el coach lo instala durante la instalación, con tu permiso. Git no hace falta: en Windows, Claude Code puede avisar de que no está disponible y funciona igual. En Amazon Quick, conecta la carpeta en Customize → Knowledge y abre un chat; al pegar el prompt del paso 3, añade al principio una línea con la ruta: «La carpeta de trabajo es «NOMBRE» (RUTA COMPLETA).». Revisa antes las opciones de indexación de esa carpeta: suben los archivos a la nube y el coach no las necesita.
 3. Copia y pega este prompt en el chat:
 
 ```

@@ -8,6 +8,15 @@ Las secciones de cada versión usan el vocabulario de las migraciones — **Aña
 
 Regla de oro de la actualización: **nunca toca contenido tuyo** — `ME.md`, `projects/`, `areas/`, `knowledge/`, `episodic/` ni `pokm/` — y **nunca borra** skills ni entradas que tú hayas creado. Solo añade y modifica lo que aquí se lista. Una operación **Migrado** puede mover o reformatear también skills tuyas, pero conservando su contenido íntegro y siempre con tu OK: migrar no es borrar.
 
+## [2.5.1] - 2026-11-20
+
+Si empiezas a instalar el coach en el modo Work de ChatGPT, el instalador te propone pasarte a Codex, en la misma app de escritorio. Es donde hemos probado el recorrido completo. No cambia nada en tu carpeta. Cómo actualizar, en `migrations/2.5.1.md`.
+
+### Repo (no se aplica a tu carpeta)
+
+- INSTALL — en una instalación nueva en el modo Work, el coach recomienda en una frase pasar a Codex, explica cómo retomar allí la instalación sin perder lo hecho y continúa en Work si el usuario lo prefiere. Si no sabe en qué modo está, lo pregunta.
+- README — recomienda Codex para quien trabaja con ChatGPT y avisa de que el instalador lo propondrá.
+
 ## [2.5.0] - 2026-11-05
 
 En Cowork, la revisión diaria pasa a ser una sola tarea, como en las demás apps: primero Learning y después Proyectos y Áreas, sobre el mismo diario. Y la instalación pregunta siempre si crea la tarea de la revisión. Cómo actualizar, en `migrations/2.5.0.md`.
