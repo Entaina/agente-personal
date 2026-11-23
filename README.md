@@ -35,6 +35,8 @@ Instala mi asistente personal en esta carpeta local permanente. Si estamos en Cl
 4. Responde tres bloques breves: quién eres (con tu ubicación, para fijar tu zona horaria), cómo llamar al asistente y cómo te gusta trabajar. Una pregunta cada vez; di «siguiente» si alguna no aplica. No necesitas definir objetivos.
 5. Comprueba tu primer log y responde a las propuestas, si las hay. Si faltan herramientas para automatizar, el instalador te indicará qué queda pendiente. En Amazon Quick, crea además el agente Coach con el texto que te dé el instalador (Customize → Agents → Create → From chat) y márcalo como predeterminado (menú «⋮» del agente → Make default) para que cada chat nuevo empiece con él: Quick no lee las instrucciones de la carpeta por sí solo.
 
+**Recomendado: apaga la memoria propia de la app.** Tu coach ya es tu memoria; si la app guarda otra por su cuenta, tu contexto queda repartido y una parte atada a esa app. Antes de apagarla, revisa qué recuerda y pásale al coach lo que valga. En Claude: Settings → Your Claude, «Manage» junto a «Your memory», y luego apaga «Generate memory from chats» («Reset memory» la borra; «Pause memory» la conserva sin usarla). En ChatGPT: Settings → Personalization → Memory, «Manage», y luego «Delete and turn off memory» (o apaga «Reference saved memories» y «Reference chat history»). En Claude Code y Codex hay además una memoria propia de la herramienta: el instalador te propondrá apagarla. En cuentas de empresa puede controlarlo tu administrador.
+
 Si la entrevista se interrumpe, pide «retoma mi instalación leyendo INSTALL.md del repositorio». No vuelvas a copiar la estructura sobre la carpeta existente.
 
 ## El día a día

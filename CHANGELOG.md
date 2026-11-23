@@ -8,6 +8,15 @@ Las secciones de cada versión usan el vocabulario de las migraciones — **Aña
 
 Regla de oro de la actualización: **nunca toca contenido tuyo** — `ME.md`, `projects/`, `areas/`, `knowledge/`, `episodic/` ni `pokm/` — y **nunca borra** skills ni entradas que tú hayas creado. Solo añade y modifica lo que aquí se lista. Una operación **Migrado** puede mover o reformatear también skills tuyas, pero conservando su contenido íntegro y siempre con tu OK: migrar no es borrar.
 
+## [2.5.2] - 2026-11-23
+
+El instalador recomienda apagar la memoria propia de la app (Claude o ChatGPT) y, en Claude Code, la memoria automática de la herramienta: el coach ya es tu memoria. Antes propone revisar lo que la app recuerda y traer al coach lo que valga. Es una recomendación; nada se apaga sin tu OK. Cómo actualizar, en `migrations/2.5.2.md`.
+
+### Repo (no se aplica a tu carpeta)
+
+- INSTALL — en el paso 3, recomendación de apagar la memoria de la app con los pasos de Claude y ChatGPT, oferta de desactivar la memoria automática de Claude Code en `.claude/settings.json` de la carpeta y aviso sobre la memoria local de Codex.
+- README — el mismo paso recomendado, en una línea por app.
+
 ## [2.5.1] - 2026-11-20
 
 Si empiezas a instalar el coach en el modo Work de ChatGPT, el instalador te propone pasarte a Codex, en la misma app de escritorio. Es donde hemos probado el recorrido completo. No cambia nada en tu carpeta. Cómo actualizar, en `migrations/2.5.1.md`.
