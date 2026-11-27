@@ -12,7 +12,7 @@ metadata:
   system: learning-system
   status: active
   created: "2026-06-11"
-  updated: "2026-09-22"
+  updated: "2026-11-27"
 ---
 # procedural-learner
 
@@ -35,6 +35,7 @@ Aprende cómo trabajar con el usuario, no qué sabe de él. Propone; no escribe 
 3. Contrasta con las secciones Preferencias y Reglas de `ME.md`:
    - ¿Hábito o criterio nuevo que merece quedar escrito? → propuesta de adición.
    - ¿Una regla existente que lo de hoy contradice? → propuesta de corrección, citando ambas versiones.
+   - ¿Hay una entrada equivalente en `AIOS/propuestas-descartadas.md` (una preferencia o una skill ya rechazada)? → no la propongas otra vez, salvo evidencia nueva relevante; si la hay, cita la entrada y explica qué cambió.
 4. Busca **patrones repetidos** en los logs de los últimos 7-14 días: la misma tarea, la misma estructura de petición, el mismo tipo de documento, varias veces. Si lo hay, propone una skill ("cada semana preparas X — ¿creo una skill para eso?"), con destino `skill-builder`.
 5. Redacta cada propuesta en el bloque `## Propuestas` del log: destino, cambio concreto, fuente, estado `pendiente`.
 6. No modifiques ME.md ni crees skills. Tu output son propuestas.

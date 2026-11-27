@@ -37,6 +37,9 @@ Ejecutar en carpetas de prueba, con datos sintéticos y sin programaciones reale
 | Cowork con transcripciones completas | Sigue generando el log con las herramientas de Cowork. |
 | Tarea Cowork con el prompt original 2.0.0 | Detecta la instrucción paralela; ofrece adaptar el prompt con confirmación y conserva configuración si falta aprobación. |
 | Revisión con propuesta descartada y señal nueva ajena | Conserva el rechazo y no crea una propuesta equivalente; reutiliza las pendientes existentes. |
+| Rechazo que corrige un hecho, rechazo que es regla y rechazo de la propuesta | El hecho va en positivo a `knowledge/` con OK; la regla, a `ME.md` con OK; el tercero, una línea en `AIOS/propuestas-descartadas.md`. Nada de «no proponer…» en `ME.md`. |
+| Misma evidencia la noche siguiente, con entrada en el registro | No vuelve a proponerla; con evidencia nueva, la propone citando la entrada. |
+| Actualizar 2.5.2 con notas de rechazo en `ME.md` | Las enseña numeradas con destino propuesto; sin OK, `ME.md` queda intacto y la versión avanza igual. |
 | Pasada que cruza medianoche | Todos los learners conservan la fecha y el log elegidos al iniciar. |
 | Día sin propuestas | Termina sin inventar una propuesta para demostrar el flujo. |
 | Usuario en otra zona horaria (p. ej. Ciudad de México) | La entrevista la confirma y `ME.md` lleva su identificador IANA; el log, las señales y la revisión usan su día local. Sin la línea, se mantiene `Europe/Madrid`. |

@@ -15,7 +15,7 @@ metadata:
   system: contenido
   status: active
   created: "2026-06-11"
-  updated: "2026-06-11"
+  updated: "2026-11-27"
 ---
 # contenido-janitor
 
@@ -52,6 +52,7 @@ Lista el árbol completo (raíz + subcarpetas). Ignora archivos ocultos y de sis
 - Logs sin `consolidado:` o con un estado que no es `pendiente`/`sí`.
 - `projects/` y `areas/` no se auditan aquí: tienen su propio auditor (project-janitor), con reglas de ciclo de vida que este no conoce.
 - Propuestas con estado fuera de `pendiente`/`incorporada`/`descartada`, o propuestas `pendiente` de hace más de una semana (señal de que la tarea nocturna no las está re-presentando).
+- `AIOS/propuestas-descartadas.md`: líneas fuera del formato del registro. Y en `ME.md`, notas que solo recuerdan un rechazo («no proponer X», «descartado: Y»): se reportan para llevarlas al registro, o a `knowledge/` si corrigen un hecho.
 - Plantillas: todo archivo de `AIOS/Templates/` está en la tabla de plantillas del mapa, y toda fila de la tabla apunta a un archivo que existe. Plantillas alteradas respecto a su forma canónica se reportan.
 
 ### 4. Reporte
@@ -74,7 +75,7 @@ Espera la aprobación del usuario antes de tocar nada.
 ### 5. Arreglo (con aprobación)
 
 - **Arreglos seguros**: registrar en el mapa lo que falta, retirar entradas huérfanas, completar frontmatters mecánicos (fechas, estados) con el dato evidente.
-- **Se reporta pero NO se auto-arregla**: mover o renombrar archivos (decisión del usuario), contenido de knowledge que parezca obsoleto (criterio humano), propuestas pendientes antiguas (el usuario decide si firmarlas o descartarlas).
+- **Se reporta pero NO se auto-arregla**: mover o renombrar archivos (decisión del usuario), contenido de knowledge que parezca obsoleto (criterio humano), propuestas pendientes antiguas (el usuario decide si firmarlas o descartarlas), notas de rechazo en `ME.md` (se mueven solo con su OK).
 
 ## Qué produce
 
