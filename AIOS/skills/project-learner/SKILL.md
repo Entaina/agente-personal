@@ -14,7 +14,7 @@ metadata:
   system: proyectos-y-areas
   status: active
   created: "2026-06-11"
-  updated: "2026-06-11"
+  updated: "2026-11-27"
 ---
 # project-learner
 
@@ -39,8 +39,9 @@ Detecta el movimiento de la cartera en el registro del día. Propone; quien escr
    - **Área que asoma**: una responsabilidad recurrente sin archivo — algo que el usuario atiende una y otra vez y que no puede "acabarse". → Propuesta de creación desde `AIOS/Templates/area-template.md`, con un borrador de su Estándar.
    - **Avance de existente**: decisión tomada, paso completado, persona nueva, cambio de rumbo o de estándar que toca a un proyecto o área con archivo. → Propuesta de actualización (qué sección, qué texto).
    - **Estado que miente**: el log demuestra que un `pending` ya está en marcha, que un `working` se dio por cerrado, o que un área `active` se traspasó. → Propuesta de cambio de status, explícita.
-3. Redacta cada propuesta en el bloque `## Propuestas` del log, tipo `proyectos`, con la plantilla: destino, cambio concreto listo para aplicar, fuente, estado `pendiente`.
-4. No crees ni modifiques nada en `projects/`. Tu output son propuestas; las aprobadas se aplican vía project-manager.
+3. Antes de redactar, consulta `AIOS/propuestas-descartadas.md`: una entrada equivalente por proyecto y cambio bloquea la propuesta, salvo evidencia nueva relevante; si la hay, cita la entrada y explica qué cambió.
+4. Redacta cada propuesta en el bloque `## Propuestas` del log, tipo `proyectos`, con la plantilla: destino, cambio concreto listo para aplicar, fuente, estado `pendiente`.
+5. No crees ni modifiques nada en `projects/`. Tu output son propuestas; las aprobadas se aplican vía project-manager.
 
 ## Qué produce
 

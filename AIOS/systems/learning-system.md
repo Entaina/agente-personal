@@ -23,24 +23,27 @@ Secuencia: (1) episodic-learner escribe el log; (2) los dos learners de propuest
 
 Al comenzar fija el día de la revisión (hoy en la zona horaria del usuario, salvo petición expresa de otra fecha) y la ruta de su log. Pasa ambos a cada learner: sus referencias a «hoy» significan ese día durante esta ejecución. Mantén el mismo log aunque se cruce medianoche; una ejecución nueva sí vuelve a determinar su fecha.
 
-Antes de añadir propuestas, cada pasada contrasta las ya existentes por destino, cambio y fuente, aunque estén redactadas de otra forma. Reutiliza una pendiente equivalente; no vuelve a proponer una incorporada o descartada por releer la misma evidencia. Una señal nueva ajena a esa propuesta no cambia su estado. Solo evidencia nueva relevante o una petición explícita del usuario justifican una propuesta nueva, explicando qué cambió y conservando la anterior.
+Antes de añadir propuestas, cada pasada contrasta las ya existentes por destino, cambio y fuente, aunque estén redactadas de otra forma, y consulta `AIOS/propuestas-descartadas.md`. Reutiliza una pendiente equivalente; no vuelve a proponer una incorporada o descartada por releer la misma evidencia. Una señal nueva ajena a esa propuesta no cambia su estado. Solo evidencia nueva relevante o una petición explícita del usuario justifican una propuesta nueva, explicando qué cambió y conservando la anterior.
 
-**El hand-off**: el usuario responde esa noche o al abrir la sesión a la mañana siguiente — sí, no, o corrige. El coach aplica las aprobadas en sus destinos, descarta el resto, actualiza el estado de cada una en el log y marca el log como `consolidado: sí`. **Al aplicar una propuesta que crea un archivo o directorio nuevo, parte de la plantilla correspondiente de `AIOS/Templates/` — lee el archivo de la plantilla antes, no la reconstruyas de memoria.** Las propuestas `pendiente` de días anteriores se re-presentan cada noche hasta que el usuario las resuelva: nada se pierde por no contestar un día.
+**El hand-off**: el usuario responde esa noche o al abrir la sesión a la mañana siguiente — sí, no, o corrige. El coach aplica las aprobadas en sus destinos, descarta el resto, actualiza el estado de cada una en el log y marca el log como `consolidado: sí`. **Al descartar, clasifica cada rechazo** antes de cerrarlo: (a) si corrige un hecho («Marta no es clienta, es proveedora»), propón en el acto ese hecho en positivo en su destino de `knowledge/` o `ME.md` y aplícalo solo con su OK; (b) si es una regla sobre lo que quiere o no en su coach («la mudanza no entra aquí»), propón añadirla a Preferencias o Reglas de `ME.md`, con su OK; (c) si rechaza la propuesta en sí, añade una línea a `AIOS/propuestas-descartadas.md` con su formato. Esa línea forma parte de resolver la propuesta, como su estado en el log, y no pide otra firma. Si dudas entre (a), (b) y (c), pregúntalo en una frase. Nunca apuntes en `ME.md` notas del tipo «no proponer X». **Al aplicar una propuesta que crea un archivo o directorio nuevo, parte de la plantilla correspondiente de `AIOS/Templates/` — lee el archivo de la plantilla antes, no la reconstruyas de memoria.** Las propuestas `pendiente` de días anteriores se re-presentan cada noche hasta que el usuario las resuelva: nada se pierde por no contestar un día.
 
 ## Cuándo NO usarlo
 
+- Como sitio para recordar rechazos en `ME.md`: el registro de lo descartado es `AIOS/propuestas-descartadas.md`; `ME.md` solo recibe hechos y reglas.
 - Como editor en tiempo real de la memoria: si el usuario pide en mitad de una sesión "apunta que prefiero X", se edita ME.md con confirmación ahí mismo — no se espera a la noche.
 - Como tracker de tareas: los Pendientes son hilos abiertos del coach, no un gestor de proyectos.
 
 ## Ejemplos correctos
 
-- *Mañana, el usuario abre la sesión nocturna:* "3 propuestas de ayer: (1) añadir a knowledge/cliente-acme.md que el contacto pasó a ser Roberto; (2) regla nueva: los informes siempre en una página; (3) detecté que preparas la reunión de los lunes cada semana — ¿creo una skill?". El usuario: "1 y 3 sí, 2 no". El coach aplica, dispara skill-builder para la 3, actualiza estados, marca el log consolidado.
+- *Mañana, el usuario abre la sesión nocturna:* "3 propuestas de ayer: (1) añadir a knowledge/cliente-acme.md que el contacto pasó a ser Roberto; (2) regla nueva: los informes siempre en una página; (3) detecté que preparas la reunión de los lunes cada semana — ¿creo una skill?". El usuario: "1 y 3 sí, 2 no, eso fue solo para el informe de ayer". El coach aplica, dispara skill-builder para la 3, apunta la 2 en `AIOS/propuestas-descartadas.md` con ese motivo, actualiza estados, marca el log consolidado.
+- *Rechazo que corrige un hecho:* "No, Marta no es clienta, es nuestra proveedora de embalaje". El coach propone en el acto la ficha de Marta como proveedora y, con el OK, la crea; no apunta nada en el registro de descartadas.
 - *Día tranquilo:* el log queda casi vacío y hay cero propuestas. Resultado válido — el sistema no rellena.
 
 ## Ejemplos incorrectos
 
 - *El semantic-learner edita knowledge/ directamente "porque la señal era clara".* Jamás: propone, no aplica.
 - *La tarea nocturna re-redacta el workflow de los learners en su prompt.* El prompt apunta a las skills; el archivo de cada skill es la fuente de verdad.
+- *Tras un rechazo, el coach añade a `ME.md` "no crear la skill del comité".* Es historia de una propuesta, no una regla: va a `AIOS/propuestas-descartadas.md`.
 - *Veinte propuestas en una noche.* Tope 5-7 por learner, las de más señal. La firma matinal debe costar dos minutos, no veinte.
 
 ## Primer arranque

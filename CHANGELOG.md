@@ -8,6 +8,29 @@ Las secciones de cada versión usan el vocabulario de las migraciones — **Aña
 
 Regla de oro de la actualización: **nunca toca contenido tuyo** — `ME.md`, `projects/`, `areas/`, `knowledge/`, `episodic/` ni `pokm/` — y **nunca borra** skills ni entradas que tú hayas creado. Solo añade y modifica lo que aquí se lista. Una operación **Migrado** puede mover o reformatear también skills tuyas, pero conservando su contenido íntegro y siempre con tu OK: migrar no es borrar.
 
+## [2.6.0] - 2026-11-27
+
+Lo que descartas en la revisión diaria tiene su sitio. Si el rechazo corrige un hecho, el coach lo guarda en positivo donde corresponde; si es una regla, en tu `ME.md`; y si solo rechazas la propuesta, en un registro propio que los learners consultan antes de proponer, para no repetirte lo mismo. Así `ME.md` deja de llenarse de «no proponer…». Al actualizar, el coach te enseña las notas de ese tipo que ya tengas en `ME.md` y, con tu OK, las lleva a su sitio. Cómo actualizar, en `migrations/2.6.0.md`.
+
+### Añadido
+
+- `AIOS/propuestas-descartadas.md` — registro de las propuestas rechazadas que no corrigen un hecho ni son una regla: una línea por rechazo, con destino, cambio, motivo y log de origen.
+
+### Cambiado
+
+- `AIOS/systems/learning-system.md` y `AIOS/systems/proyectos-y-areas.md` — consultan el registro antes de proponer y clasifican cada rechazo al resolver las propuestas: hecho corregido, regla o rechazo de la propuesta.
+- `AIOS/skills/semantic-learner/SKILL.md`, `AIOS/skills/procedural-learner/SKILL.md` y `AIOS/skills/project-learner/SKILL.md` — paso de contraste con el registro.
+- `AIOS/skills/contenido-janitor/SKILL.md` — vigila el formato del registro y reporta las notas de rechazo que queden en `ME.md`.
+- `AIOS/mapa-contenido.md` — el registro en la navegación y su regla de escritura.
+
+### Migrado
+
+- Notas de rechazo de `ME.md` → a `knowledge/` si corrigen un hecho, al registro si solo recuerdan un rechazo; las reglas se quedan. Solo con tu OK, nota a nota.
+
+### Repo (no se aplica a tu carpeta)
+
+- Tests — originales 2.5.2 de la migración y su comprobación; caso de comportamiento del rechazo clasificado.
+
 ## [2.5.2] - 2026-11-23
 
 El instalador recomienda apagar la memoria propia de la app (Claude o ChatGPT) y, en Claude Code, la memoria automática de la herramienta: el coach ya es tu memoria. Antes propone revisar lo que la app recuerda y traer al coach lo que valga. Es una recomendación; nada se apaga sin tu OK. Cómo actualizar, en `migrations/2.5.2.md`.
